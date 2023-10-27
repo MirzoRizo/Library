@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Library</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="overlay">
+      <div class="modal">
+        <form>
+          <div class="form-head logo">Add New Book</div>
+          <input
+            id="bookName"
+            type="text"
+            placeholder="Book"
+            name="bookName"
+            autocomplete="off"
+            required
+          />
+          <input
+            id="author"
+            type="text"
+            placeholder="Author"
+            name="author"
+            autocomplete="off"
+          />
+          <input
+            id="pages"
+            type="number"
+            max="1000"
+            placeholder="Pages"
+            name="pages"
+            autocomplete="off"
+            required
+          />
+          <div class="buttons">
+            <button class="confirm-btn" type="submit">Confirm</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="color">
+      <div class="header">
+        <div class="logo">MyLibrary</div>
+        <button id="btn" class="btn">+add Book</button>
+      </div>
+    </div>
+    <div class="white-space"></div>
+    <div class="main"></div>
+  </body>
+</html>

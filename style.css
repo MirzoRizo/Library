@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Poppins, sans-serif;
+  width: 100vw;
+  background-color: #f0eef1;
+  overflow-x: hidden;
+}
+.color {
+  background-color: #a4c3b2;
+  color: white;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+}
+.header {
+  display: flex;
+  width: 70vw;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.header button {
+  width: 6rem;
+  font-size: 1rem;
+  padding: 5px;
+}
+
+.white-space {
+  width: 100vw;
+  background-color: #f0eef1;
+  height: 1rem;
+  position: fixed;
+  top: 4rem;
+}
+
+.main {
+  width: 70vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  padding: 5rem 0;
+  gap: 1rem;
+}
+
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  visibility: hidden;
+}
+
+.overlay.active {
+  visibility: visible;
+  z-index: 1;
+}
+
+.modal {
+  transform: scale(0);
+  transition: 150ms ease-in-out;
+}
+.active {
+  transform: scale(1);
+}
+form {
+  border-radius: 1rem;
+  height: 25rem;
+  width: 20rem;
+  background-color: #a4c3b2;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+form > input {
+  width: 100%;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 0.6rem;
+  padding: 0.7rem;
+  background-color: #f0eef1;
+}
+
+input:focus {
+  outline: 2px solid gray;
+}
+.confirm-btn {
+  transition: none;
+}
+/* code below is for the checkbox and not using it */
+/* .check {
+  width: 90%;
+  font-size: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#check {
+  width: 10px;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+} */
+
+.modal button {
+  width: 18rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  background-color: #f0eef1;
+  border: 1px solid blue;
+  border-radius: 0.6rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+button:hover {
+  filter: brightness(90%);
+  transition: 300ms ease-in-out;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #a4c3b2;
+  font-size: 1.2rem;
+  height: 20rem;
+  border-radius: 1rem;
+  color: black;
+  padding: 1rem;
+  word-break: break-all;
+}
+.card > button {
+  width: 100%;
+}
+
+.name {
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card button {
+  width: 13rem;
+  font-size: 1.3rem;
+}
+
+.Unread {
+  padding: 0.2rem;
+  background-color: #ff0000;
+  transition: background-color 200ms;
+  margin-bottom: 1rem;
+}
+.Read {
+  background-color: #91f291;
+  transition: background-color 100ms;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  font-weight: 500;
+  border: 1px solid blue;
+  border-radius: 0.6rem;
+  padding: 0.34rem;
+  cursor: pointer;
+}
